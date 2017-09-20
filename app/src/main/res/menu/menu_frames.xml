@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".view.MainActivity">
+
+    <item android:id="@+id/show_prices"
+        android:title="Mostrar preços"
+        app:showAsAction="never"
+        />
+    <item android:id="@+id/hide_prices"
+        android:title="Não mostrar preços"
+        app:showAsAction="never"
+        />
+</menu>

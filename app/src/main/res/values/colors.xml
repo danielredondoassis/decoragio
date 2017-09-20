@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="dc_white_color">#FFFFFF</color>
+    <color name="colorPrimary">#165363</color>
+    <color name="colorPrimaryDark">#091F28</color>
+    <color name="colorAccent">#2E7579</color>
+
+    <color name="ripple_pressed">#F5F5F5</color>
+    <color name="ripple_selected">#EBEBEB</color>
+
+    <color name="dc_ripple_red">#D93B42</color>
+    <color name="dc_ripple_red_pressed">#ef797e</color>
+    <color name="dc_ripple_red_selected">#a9282d</color>
+
+    <color name="dc_ripple_blue">#165363</color>
+    <color name="dc_ripple_blue_pressed">#2E7579</color>
+    <color name="dc_ripple_blue_selected">#0D3B54</color>
+
+    <color name="dc_ripple_green">#94BAA1</color>
+    <color name="dc_ripple_green_pressed">#92ce85</color>
+    <color name="dc_ripple_green_selected">#2ca01c</color>
+
+    <color name="dc_calendar_blue_bg">#e3eaf3</color>
+    <color name="dc_calendar_today_color">#a3bbf3</color>
+    <color name="dc_calendar_today_selected_color">#3961bd</color>
+    <color name="dc_calendar_others_selected_color">#c4cdd7</color>
+
+    <color name="zp_separator">#eae9e9</color>
+
+    <color name="deco_navy_blue_I">#091F28</color>
+
+    <color name="deco_blue_I">#165363</color>
+    <color name="deco_ripple_pressed_blue_I">#2E7579</color>
+    <color name="deco_ripple_selected_blue_I">#0D3B54</color>
+
+    <color name="zp_darkgray_color">#b3b3b3</color>
+
+    <color name="dc_green_color">#56b349</color>
+
+    <string name="loading_title">Atualizando valores</string>
+    <string name="loading_message">Por favor, aguarde...</string>
+
+</resources>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:state_pressed="true"
+        android:drawable="@drawable/ripple_rounded_corners_green_pressed" />
+
+    <!-- focused/not selected -->
+
+    <item android:state_focused="true" android:state_selected="false"
+        android:drawable="@drawable/ripple_rounded_corners_green_selected" />
+
+    <!-- focused/selected -->
+
+    <item android:state_focused="true" android:state_selected="true"
+        android:drawable="@drawable/ripple_rounded_corners_green_selected" />
+
+    <!-- selected -->
+
+    <item android:state_selected="true"
+        android:drawable="@drawable/ripple_rounded_corners_green_selected" />
+
+    <item android:state_checked="true"
+        android:drawable="@drawable/ripple_rounded_corners_green_selected" />
+
+    <!-- default -->
+
+    <item android:drawable="@drawable/ripple_rounded_corners_green" />
+
+</selector>
