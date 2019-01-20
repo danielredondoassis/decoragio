@@ -107,6 +107,7 @@ public class FrameAndInsumoLoader {
                     Toast.makeText(context,"Ocorreu um erro ao salvar seu novo arquivo de Insumos, verifique o JSON e tente novamente",Toast.LENGTH_LONG).show();
                 } else {
                     mDataController.saveInsumos(result);
+                    Toast.makeText(context,"Insumos atualizados com sucesso",Toast.LENGTH_LONG).show();
                 }
                 GenericViewController.getInstance(context).hideLoading();
             } else {
@@ -150,6 +151,7 @@ public class FrameAndInsumoLoader {
             if(result != null) {
                 mDataController.saveFramePrices(result);
                 GenericViewController.getInstance(context).refreshList();
+                Toast.makeText(context,"Molduras atualizadas com sucesso",Toast.LENGTH_LONG).show();
             } else {
                 Toast.makeText(context,"Ocorreu um erro ao salvar seu novo arquivo de Molduras, verifique o JSON e tente novamente",Toast.LENGTH_LONG).show();
             }

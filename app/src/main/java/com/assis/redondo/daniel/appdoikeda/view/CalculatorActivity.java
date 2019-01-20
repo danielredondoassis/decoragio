@@ -1,28 +1,10 @@
 package com.assis.redondo.daniel.appdoikeda.view;
 
-import android.Manifest;
-import android.annotation.TargetApi;
-import android.content.ContentUris;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.content.pm.PackageManager;
-import android.database.Cursor;
-import android.net.Uri;
-import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
-import android.os.Environment;
-import android.provider.DocumentsContract;
-import android.provider.MediaStore;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.support.design.widget.TextInputLayout;
-import android.support.v4.app.ActivityCompat;
-import android.support.v7.app.AlertDialog;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.PopupMenu;
-import android.support.v7.widget.Toolbar;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
@@ -40,52 +22,45 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.assis.redondo.daniel.appdoikeda.R;
-import com.assis.redondo.daniel.appdoikeda.api.model.ProjectModel;
-import com.assis.redondo.daniel.appdoikeda.api.response.FrameModelResponse;
 import com.assis.redondo.daniel.appdoikeda.data.DataController;
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
+import com.google.android.material.textfield.TextInputLayout;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.io.Reader;
-import java.math.BigDecimal;
-
-import butterknife.Bind;
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 public class CalculatorActivity extends AppCompatActivity {
 
 
-    @Bind(R.id.editHeight)
+    @BindView(R.id.editHeight)
     EditText editHeight;
-    @Bind(R.id.editHeightInput)
+    @BindView(R.id.editHeightInput)
     TextInputLayout editHeightInput;
-    @Bind(R.id.editWidth)
+    @BindView(R.id.editWidth)
     EditText editWidth;
-    @Bind(R.id.editWidthInput)
+    @BindView(R.id.editWidthInput)
     TextInputLayout editWidthInput;
-    @Bind(R.id.btnFrame)
+    @BindView(R.id.btnFrame)
     Button btnFrame;
-    @Bind(R.id.editPassepartout)
+    @BindView(R.id.editPassepartout)
     EditText editPassepartout;
-    @Bind(R.id.editPassepartoutInput)
+    @BindView(R.id.editPassepartoutInput)
     TextInputLayout editPassepartoutInput;
-    @Bind(R.id.checkGlass)
+    @BindView(R.id.checkGlass)
     CheckBox checkGlass;
-    @Bind(R.id.checkBackground)
+    @BindView(R.id.checkBackground)
     CheckBox checkBackground;
-    @Bind(R.id.checkCollage)
+    @BindView(R.id.checkCollage)
     CheckBox checkCollage;
-    @Bind(R.id.frameOptionsLayout)
+    @BindView(R.id.frameOptionsLayout)
     LinearLayout frameOptionsLayout;
-    @Bind(R.id.btnCalcProject)
+    @BindView(R.id.btnCalcProject)
     Button btnCalcProject;
-    @Bind(R.id.textView)
+    @BindView(R.id.textView)
     TextView textView;
-    @Bind(R.id.projectTotalValue)
+    @BindView(R.id.projectTotalValue)
     TextView projectTotalValue;
     private DataController mDataController;
     private AlertDialog.Builder mFillFormDialog;
@@ -111,8 +86,6 @@ public class CalculatorActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-
-
         btnCalcProject.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -125,7 +98,6 @@ public class CalculatorActivity extends AppCompatActivity {
                 }
             }
         });
-
 
         checkGlass.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override

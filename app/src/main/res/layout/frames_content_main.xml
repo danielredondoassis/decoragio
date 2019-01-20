@@ -11,15 +11,14 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-    <android.support.v7.widget.RecyclerView
+    <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/searchRecycler"
         android:scrollbars="horizontal"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:background="@android:color/white"
-        android:layout_below="@+id/toolBarLayout" />
+        android:background="@android:color/white" />
 
-    <android.support.v7.widget.RecyclerView
+    <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/frameRecycler"
         android:scrollbars="horizontal"
         android:layout_width="match_parent"

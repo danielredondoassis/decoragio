@@ -6,5 +6,8 @@
     <string name="fill_width_field">Preencha o campo de largura.</string>
     <string name="fill_more_options">Você não pode selecionar apenas a opção de moldura + vidro.</string>
     <string name="select_frame">Você precisa escolher uma moldura.</string>
+    <string name="dialog_permission_title">Atenção</string>
+    <string name="upload_permission_message">Para realizar o upload de um novo arquivo de insumos ou molduras, precisamos pedir algumas permissões.</string>
+    <string name="upload_permission_denial">Ao desabilitar a permissão de acessar seus arquivos, você não poderá atualizar suas tabelas de molduras ou insumos.\nDeseja continuar?</string>
 
 </resources>
